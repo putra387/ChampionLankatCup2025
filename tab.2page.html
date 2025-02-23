@@ -1,0 +1,44 @@
+Filename: tab2.page.html
+<ion-header>
+ <ion-toolbar>
+   <ion-title>Registrasi tim</ion-title>
+     <ion-buttons slot="start">
+     <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content padding>
+   <ion-card class="welcome-card bg-content">
+     <ion-card-header>
+     <ion-card-title color="primary">Registrasi Tim</ion-card-title>
+  </ion-card-header>
+ <ion-card-content>
+   <p>Silakan isikan form dibawah untuk pendataan alumni!.</p> 
+
+ <ion-list>
+   <ion-item>
+   <ion-label position="floating"> Nama lengkap </ion-label>
+  <ion-input type="text" [(ngModel)]="nama"></ion-input>
+  </ion-item> 
+
+ <ion-item> 
+   <ion-label position="floating"> Nomor HP/WA </ion-label>
+   <ion-input type="text" [(ngModel)]="nohp"></ion-input>
+ </ion-item> 
+
+ <ion-item>
+   <ion-label position="floating"> Email </ion-label>
+   <ion-input type="email" [(ngModel)]="email"></ion-sinput>
+ </ion-item>
+ 
+ <ion-item>
+    <ion-label position="floating">prodi </ion-label> 
+    <ion-select [(ngModel)]="prodi" class="popover-contem\nt"placeholder="pilih prodi"> 
+    <ion-select-option value="Teknik Informatika (S1)">Teknik Informatika (S1)</ion-selec-option</ion-select-option> 
+    <ion-select-option value="sistem informasi (S1)">Sistem Informasi (S1)</ion-select-option>ion-select-option>
+    <ion-select-option value="rekayasa prangkat lunak (S1)">rekayasa
+    perangkat lunak (S1)</ion-select-option> 
+    <ion-selec-option volue="teknologi informasi (S1)">teknologi informasi (s1)</ion-selec-option>ion-select-option> 
+
+     
